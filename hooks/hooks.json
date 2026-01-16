@@ -6,11 +6,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/protect-files.py"
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/protect-files.py"
           },
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/security-check.py"
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/security-check.py"
           }
         ]
       },
@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/log-commands.sh"
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/log-commands.sh"
           }
         ]
       }
@@ -30,7 +30,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/format-on-edit.py"
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/format-on-edit.py"
           }
         ]
       }
@@ -41,7 +41,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/notify-input.sh"
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/notify-input.sh"
           }
         ]
       }
@@ -52,11 +52,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/verify-on-complete.py"
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/verify-on-complete.py"
           },
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/notify-complete.sh"
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/notify-complete.sh"
           }
         ]
       }
@@ -67,7 +67,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/validate-environment.py"
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/validate-environment.py"
           }
         ]
       }
@@ -78,7 +78,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/validate-prompt.py"
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/validate-prompt.py"
           }
         ]
       }

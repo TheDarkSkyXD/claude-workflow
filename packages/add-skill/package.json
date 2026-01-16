@@ -1,0 +1,37 @@
+{
+  "name": "install-claude-workflow-v2",
+  "version": "2.0.5",
+  "type": "commonjs",
+  "description": "Install Claude Code skills and plugins via npx",
+  "bin": {
+    "install-claude-workflow-v2": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skills",
+    "plugin",
+    "ai",
+    "anthropic"
+  ],
+  "author": "CloudAI-X",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudAI-X/claude-workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CloudAI-X/claude-workflow/issues"
+  },
+  "homepage": "https://github.com/CloudAI-X/claude-workflow#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "degit": "^2.8.4"
+  }
+}

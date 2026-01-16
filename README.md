@@ -73,7 +73,7 @@ These commands become available:
 | ------------ | ----- | ------------------------------------------------------------------------ |
 | **Agents**   | 7     | Specialized subagents for code review, debugging, security, etc.         |
 | **Commands** | 17    | Slash commands for workflows and output styles                           |
-| **Skills**   | 6     | Knowledge domains Claude uses autonomously                               |
+| **Skills**   | 10    | Knowledge domains Claude uses autonomously                               |
 | **Hooks**    | 9     | Automation scripts for formatting, security, verification, notifications |
 
 ---
@@ -260,14 +260,18 @@ Agents are specialized subagents that Claude spawns automatically based on your 
 
 Skills are knowledge domains that Claude uses autonomously when relevant.
 
-| Skill                    | Domain                                      |
-| ------------------------ | ------------------------------------------- |
-| `analyzing-projects`     | Understand codebase structure and patterns  |
-| `designing-tests`        | Unit, integration, E2E test approaches      |
-| `designing-architecture` | Clean Architecture, Hexagonal, etc.         |
-| `optimizing-performance` | Speed up applications, identify bottlenecks |
-| `managing-git`           | Version control, conventional commits       |
-| `designing-apis`         | REST/GraphQL patterns and best practices    |
+| Skill                         | Domain                                                |
+| ----------------------------- | ----------------------------------------------------- |
+| `analyzing-projects`          | Understand codebase structure and patterns            |
+| `designing-tests`             | Unit, integration, E2E test approaches                |
+| `designing-architecture`      | Clean Architecture, Hexagonal, etc.                   |
+| `optimizing-performance`      | Speed up applications, identify bottlenecks           |
+| `managing-git`                | Version control, conventional commits                 |
+| `designing-apis`              | REST/GraphQL patterns and best practices              |
+| `parallel-execution`          | Multi-subagent parallel task execution patterns       |
+| `web-design-guidelines`       | UI review against Vercel Web Interface Guidelines     |
+| `vercel-react-best-practices` | React/Next.js performance optimization (45 rules)     |
+| `convex-backend`              | Convex backend development (functions, schemas, etc.) |
 
 ---
 
@@ -293,11 +297,12 @@ Hooks run automatically on specific events.
 
 For detailed multi-agent orchestration examples, see the [examples/](./examples/) directory:
 
-| Example | Description |
-| ------- | ----------- |
+| Example                                                                          | Description                                            |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------ |
 | [Comprehensive Code Review](./examples/orchestration/comprehensive-code-review/) | 6-agent sequential workflow for thorough code analysis |
 
 Each example includes:
+
 - **README.md** - Overview and quick start
 - **workflow.md** - Exact prompts to use
 - **verification.md** - How to verify it works
@@ -451,13 +456,17 @@ claude-workflow/
 │   ├── lint-check.md
 │   ├── security-scan.md
 │   └── code-simplifier.md
-├── skills/                   # 6 knowledge domains
+├── skills/                   # 10 knowledge domains
 │   ├── analyzing-projects/
-│   ├── designing-tests/
-│   ├── designing-architecture/
+│   ├── convex-backend/
 │   ├── designing-apis/
+│   ├── designing-architecture/
+│   ├── designing-tests/
 │   ├── managing-git/
-│   └── optimizing-performance/
+│   ├── optimizing-performance/
+│   ├── parallel-execution/
+│   ├── vercel-react-best-practices/
+│   └── web-design-guidelines/
 ├── hooks/
 │   ├── hooks.json            # Hook configuration
 │   └── scripts/              # 9 automation scripts
